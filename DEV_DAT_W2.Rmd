@@ -1,0 +1,16 @@
+---
+title: "DEV_Data_w1"
+date: "JUNE 4, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+ library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=7.68565, lat=45.0592, popup="VIA ormea a beauitiful place to walk")
+my_map 
+```
